@@ -56,7 +56,7 @@ The notebook `notebooks/data_preparation.ipynb` implements the following steps:
 ## Repository structure
 
 ```
-ml-subject-approval-prediction/
+ml-course-approval-prediction/
 ├── AprobacionCurso2026.csv                 # raw dataset
 └── notebooks/
     └── data_preparation.ipynb              # ETL + data preparation pipeline
