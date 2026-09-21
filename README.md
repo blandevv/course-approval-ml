@@ -1,4 +1,4 @@
-# ml-subject-approval-prediction
+# course-approval-ml
 
 Machine learning project to predict whether a student **passes a subject**, covering the full data
 preparation pipeline: ETL, exploratory data analysis, cleaning, encoding, balancing and dimensionality
@@ -14,7 +14,7 @@ course approval. The final prepared dataset is intended for a downstream binary 
 
 ## Dataset
 
-`AprobacionCurso2026.csv` — synthetic academic records for one course approval cycle (2026). Each row
+`data/AprobacionCurso2026.csv` — synthetic academic records for one course approval cycle (2026). Each row
 represents a student with the following features:
 
 | Variable | Description |
@@ -56,8 +56,9 @@ The notebook `notebooks/data_preparation.ipynb` implements the following steps:
 ## Repository structure
 
 ```
-ml-course-approval-prediction/
-├── AprobacionCurso2026.csv                 # raw dataset
+course-approval-ml/
+├── data/
+│   └── AprobacionCurso2026.csv             # raw dataset
 └── notebooks/
     └── data_preparation.ipynb              # ETL + data preparation pipeline
 ```
@@ -66,7 +67,7 @@ ml-course-approval-prediction/
 
 Open the notebook in Google Colab:
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/blandevv/course-approval-ml/blob/main/notebooks/data_preparation.ipynb)
 
 Then upload `AprobacionCurso2026.csv` to the Colab environment (or mount your Google Drive) and run
 all cells in order. Dependencies (`ydata-profiling`, `imbalanced-learn`) are installed automatically
